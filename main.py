@@ -8,7 +8,7 @@ intents.presences = True
 
 client = commands.Bot(command_prefix = 'tia.', intents=intents)
 
-keywords = ["You're a fat fuck", "You mother has a fat ass"]
+keywords = ["keyword yes", "keyword no"]
 
 @client.event
 async def on_ready():
