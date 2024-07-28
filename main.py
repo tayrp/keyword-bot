@@ -16,10 +16,9 @@ async def on_ready():
     print("Searching for Keywords")
     print("----------------------")
 
-@client.event
+@bot.event
 async def on_message(message):
-    for t in range(len(keywords)):
-      message_text = message.content
-      if keywords in message.content:
-        if (message.content == 'coolmsg'):
-            await client.send_message(message.channel, "'{}' was said".format(keyword))
+      message_text = message.content.strip().upper()
+      if keyword in message_text:
+            
+            await bot.send_message(message.channel, "'{}' was said".format(keyword))
