@@ -20,5 +20,4 @@ async def on_ready():
 async def on_message(message):
       message_text = message.content.strip().upper()
       if keyword in message_text:
-            
             await bot.send_message(message.channel, "'{}' was said".format(keyword))
